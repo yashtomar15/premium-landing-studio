@@ -1,4 +1,5 @@
 
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Stats from "@/components/Stats";
@@ -10,16 +11,19 @@ import Cta from "@/components/Cta";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <About />
-      <Stats />
-      <Services />
-      <Portfolio />
-      <Process />
-      <Testimonials />
-      <Cta />
-    </main>
+    <>
+      <Header />
+      <main className="min-h-screen">
+        <Hero />
+        <About />
+        <Stats />
+        <Services />
+        <Portfolio />
+        <Process />
+        <Testimonials />
+        <Cta />
+      </main>
+    </>
   );
 };
 
