@@ -74,8 +74,8 @@ const Testimonials = () => {
   }, [controls]);
 
   return (
-    <section className="py-20 overflow-hidden gradient-bg">
-      <div className="container mx-auto px-4">
+    <section className="py-20 overflow-hidden gradient-bg w-full">
+      <div className="container mx-auto px-4 max-w-[100vw]">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Client <span className="text-gradient">Success Stories</span>
@@ -86,16 +86,16 @@ const Testimonials = () => {
         </div>
         <div 
           ref={containerRef}
-          className="overflow-hidden"
+          className="overflow-hidden w-full"
         >
           <motion.div 
-            className="flex gap-8 w-fit"
+            className="flex gap-6 w-fit"
             animate={controls}
           >
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <motion.div
                 key={`${testimonial.name}-${index}`}
-                className="glass-card p-6 rounded-lg flex-shrink-0 w-[300px] md:w-[400px]"
+                className="glass-card p-6 rounded-lg flex-shrink-0 w-[280px] md:w-[320px]"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <img
